@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Erandi Gunapala — Course Site</title>
+<meta name="description" content="Profile and course hub for Dr. Erandi Gunapala's math, physics, and engineering courses." />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-nav-id="home">
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-title" href="index.html">Erandi Gunapala</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <nav class="site-nav">
+      <a href="index.html" data-nav-id="home">About</a>
+      <a href="courses/index.html" data-nav-id="courses">Courses</a>
+      <a href="search.html" data-nav-id="search">Search</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-hero">
+    <p class="eyebrow">Welcome</p>
+    <h1>Hi, I'm Dr. Erandi Gunapala.</h1>
+    <p class="lede">
+      This site collects materials, practice quizzes, and interactive tools
+      for my math, physics, and engineering courses — organized by unit so
+      you can find what you need without digging through a gradebook.
+    </p>
+  </section>
+
+  <section class="profile-layout">
+    <div class="profile-photo">
+      <img src="assets/img/profile.jpg" alt="Dr. Erandi Gunapala" />
+    </div>
+    <div>
+      <h2 style="margin-top:0;">About Me</h2>
+      <p>
+        I'm originally from Sri Lanka, where I completed my bachelor's
+        degree before moving to the United States for graduate school. I
+        earned my Ph.D. in Physics from the University of North Dakota, then
+        taught for several years in Minnesota before joining the faculty
+        here in Scottsbluff, Nebraska — this is my tenth year teaching here.
+      </p>
+      <p>
+        Outside the classroom, I love to travel and take every chance I get
+        to explore somewhere new.
+      </p>
+
+      <ul class="contact-list">
+        <li><span class="contact-icon">📍</span> Room A9H (in A-Pod)</li>
+        <li><span class="contact-icon">📧</span> <a href="mailto:gunapale@wncc.edu">gunapale@wncc.edu</a></li>
+        <li><span class="contact-icon">📞</span> 308-635-6349</li>
+        <li><span class="contact-icon">💬</span> Blackboard messages or Teams Chat also work well</li>
+      </ul>
+
+      <div class="office-hours">
+        <h3>Office Hours</h3>
+        <dl>
+          <dt>Mon / Wed / Fri</dt>
+          <dd>9:00 AM – 10:00 AM</dd>
+          <dt>Mon / Thu</dt>
+          <dd>1:00 PM – 2:00 PM</dd>
+          <dt>Other times</dt>
+          <dd>By appointment</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>My Courses</h2>
+    <p class="lede">Each course is organized by unit with practice quizzes, interactive tools, and downloadable materials.</p>
+
+    <div class="card-grid">
+      <a class="card" href="courses/course-1-physics/index.html">
+        <h3>Physics 1</h3>
+        <p>PHYS-1410 / PHYS-2110 — kinematics, forces, and projectile motion, with an interactive simulator.</p>
+        <div class="tag-row"><span class="tag">Fall</span><span class="tag">Interactive sim</span></div>
+      </a>
+      <a class="card" href="courses/math-1150/index.html">
+        <h3>College Algebra</h3>
+        <p>MATH-1150</p>
+        <div class="tag-row"><span class="tag">Fall</span></div>
+      </a>
+      <a class="card" href="courses/trig-1210/index.html">
+        <h3>Trigonometry</h3>
+        <p>MATH-1210</p>
+        <div class="tag-row"><span class="tag">Fall</span></div>
+      </a>
+      <a class="card" href="courses/engr-1010/index.html">
+        <h3>Intro to Engineering Design</h3>
+        <p>ENGR-1010</p>
+        <div class="tag-row"><span class="tag">Fall</span></div>
+      </a>
+      <a class="card" href="courses/course-5/index.html">
+        <h3>Course 5</h3>
+        <p>[Replace with your course title and one-line description.]</p>
+        <div class="tag-row"><span class="tag">TODO</span></div>
+      </a>
+      <a class="card" href="courses/course-6/index.html">
+        <h3>Course 6</h3>
+        <p>[Replace with your course title and one-line description.]</p>
+        <div class="tag-row"><span class="tag">TODO</span></div>
+      </a>
+      <a class="card" href="courses/course-7/index.html">
+        <h3>Course 7</h3>
+        <p>[Replace with your course title and one-line description.]</p>
+        <div class="tag-row"><span class="tag">TODO</span></div>
+      </a>
+    </div>
+    <p><a href="courses/index.html">See the full course list with filtering →</a></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Erandi Gunapala. Built for students — not connected to any gradebook.</p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/js/nav.js"></script>
+</body>
+</html>

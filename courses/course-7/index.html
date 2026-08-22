@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Course 7 — Erandi Gunapala</title>
+<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body data-nav-id="courses">
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-title" href="../../index.html">Erandi Gunapala</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <nav class="site-nav">
+      <a href="../../index.html" data-nav-id="home">About</a>
+      <a href="../index.html" data-nav-id="courses">Courses</a>
+      <a href="../../search.html" data-nav-id="search">Search</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-hero">
+    <p class="eyebrow">Course</p>
+    <h1>Course 7</h1>
+    <p class="lede">
+      [Replace this title and description with your real course name and
+      summary. This page is a starter template — see
+      courses/course-1-physics/index.html for a fully worked example with a
+      quiz and interactive simulator.]
+    </p>
+  </section>
+
+  <div class="course-layout">
+
+    <nav class="unit-nav" aria-label="Units in this course">
+      <h2>Units</h2>
+      <ol>
+        <li><a href="#unit-1">Unit 1 — [Title]</a></li>
+        <li><a href="#unit-2">Unit 2 — [Title]</a></li>
+      </ol>
+    </nav>
+
+    <div>
+      <div class="filter-box" data-filter-target=".unit" data-filter-empty="#units-empty">
+        <input type="search" placeholder="Filter units…" aria-label="Filter units" />
+      </div>
+      <p class="filter-count" data-filter-count></p>
+
+      <div class="collapse-controls" data-collapse-controls=".unit">
+        <button type="button" class="btn" data-expand-all>Expand all</button>
+        <button type="button" class="btn" data-collapse-all>Collapse all</button>
+      </div>
+
+      <details class="unit" id="unit-1" data-title="Unit 1" data-tags="">
+        <summary>
+          Unit 1 — [Title]
+          <span class="unit-meta">Week 1</span>
+        </summary>
+        <div class="unit-body">
+          <p>[Unit overview goes here.]</p>
+
+          <p class="placeholder-note">
+            To add a quiz here, copy a <code>&lt;div class="quiz" data-quiz='...'&gt;</code>
+            block from the Physics example and include
+            <code>assets/js/quiz.js</code> at the bottom of this page.
+          </p>
+
+          <ul class="file-list">
+            <li><a href="files/unit1-materials.pdf"><span class="file-icon">📄</span> Unit 1 Materials (add this file)</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="unit" id="unit-2" data-title="Unit 2" data-tags="">
+        <summary>
+          Unit 2 — [Title]
+          <span class="unit-meta">Week 2</span>
+        </summary>
+        <div class="unit-body">
+          <p>[Unit overview goes here.]</p>
+          <p class="placeholder-note">Add more &lt;details class="unit"&gt; blocks for additional units/weeks, and matching links in the sidebar above.</p>
+        </div>
+      </details>
+
+      <p class="no-results" id="units-empty" style="display:none;">No units matched that filter.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Erandi Gunapala.</p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../../assets/js/nav.js"></script>
+<script src="../../assets/js/collapsible.js"></script>
+<script src="../../assets/js/search.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+</body>
+</html>

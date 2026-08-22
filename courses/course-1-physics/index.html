@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Physics — Erandi Gunapala</title>
+<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body data-nav-id="courses">
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-title" href="../../index.html">Erandi Gunapala</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <nav class="site-nav">
+      <a href="../../index.html" data-nav-id="home">About</a>
+      <a href="../index.html" data-nav-id="courses">Courses</a>
+      <a href="../../search.html" data-nav-id="search">Search</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-hero">
+    <p class="eyebrow">Course</p>
+    <h1>Physics</h1>
+    <p class="lede">
+      This page is the fully-built example — copy its pattern for your other
+      six courses. It shows every feature: unit navigation, collapsible
+      sections, an in-page filter, an embedded self-check quiz, an
+      interactive projectile-motion simulator, and downloadable files.
+    </p>
+  </section>
+
+  <div class="course-layout">
+
+    <nav class="unit-nav" aria-label="Units in this course">
+      <h2>Units</h2>
+      <ol>
+        <li><a href="#unit-1">Unit 1 — Kinematics</a></li>
+        <li><a href="#unit-2">Unit 2 — Forces &amp; Newton's Laws</a></li>
+        <li><a href="#unit-3">Unit 3 — Projectile Motion</a></li>
+        <li><a href="#unit-4">Unit 4 — Energy &amp; Momentum</a></li>
+      </ol>
+    </nav>
+
+    <div>
+      <div class="filter-box" data-filter-target=".unit" data-filter-empty="#units-empty">
+        <input type="search" placeholder="Filter units, e.g. &quot;projectile&quot; or &quot;quiz&quot;…" aria-label="Filter units" />
+      </div>
+      <p class="filter-count" data-filter-count></p>
+
+      <div class="collapse-controls" data-collapse-controls=".unit">
+        <button type="button" class="btn" data-expand-all>Expand all</button>
+        <button type="button" class="btn" data-collapse-all>Collapse all</button>
+      </div>
+
+      <!-- ============ UNIT 1 ============ -->
+      <details class="unit" id="unit-1" data-title="Unit 1 Kinematics" data-tags="kinematics velocity acceleration displacement graphs">
+        <summary>
+          Unit 1 — Kinematics
+          <span class="unit-meta">Week 1–2</span>
+        </summary>
+        <div class="unit-body">
+          <p>
+            [Replace with your unit overview: position, velocity, acceleration,
+            and reading motion graphs. Add subsections, images, or worked
+            examples here — this is plain HTML, so anything you can write in
+            HTML fits.]
+          </p>
+          <ul class="file-list">
+            <li><a href="files/unit1-slides.pdf"><span class="file-icon">📄</span> Unit 1 Slides (PDF)</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- ============ UNIT 2 ============ -->
+      <details class="unit" id="unit-2" data-title="Unit 2 Forces Newtons Laws" data-tags="forces newton's laws free body diagrams friction">
+        <summary>
+          Unit 2 — Forces &amp; Newton's Laws
+          <span class="unit-meta">Week 3–4</span>
+        </summary>
+        <div class="unit-body">
+          <p>
+            [Replace with your unit overview: Newton's three laws, free-body
+            diagrams, friction. Swap in your own notes, examples, and images.]
+          </p>
+          <ul class="file-list">
+            <li><a href="files/unit2-slides.pdf"><span class="file-icon">📄</span> Unit 2 Slides (PDF)</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- ============ UNIT 3 — the full-feature example ============ -->
+      <details class="unit" id="unit-3" data-title="Unit 3 Projectile Motion quiz simulator" data-tags="projectile motion range height launch angle gravity quiz simulator interactive">
+        <summary>
+          Unit 3 — Projectile Motion
+          <span class="unit-meta">Week 5</span>
+        </summary>
+        <div class="unit-body">
+          <p>
+            A projectile launched with no air resistance follows a parabolic
+            path. Its horizontal and vertical motions are independent: horizontal
+            velocity stays constant, while vertical velocity changes at
+            <code>-g</code>. Try the simulator below, then check your
+            understanding with the quiz.
+          </p>
+
+          <h3 style="margin-bottom:0.25rem;">Interactive simulator</h3>
+          <div class="sim-wrap" data-projectile-sim>
+            <div class="sim-layout">
+              <div class="sim-canvas-box">
+                <canvas></canvas>
+              </div>
+              <div class="sim-controls">
+                <label>
+                  Launch velocity
+                  <input type="range" min="5" max="60" step="1" value="25" data-sim-velocity />
+                  <output data-sim-velocity-out>25 m/s</output>
+                </label>
+                <label>
+                  Launch angle
+                  <input type="range" min="5" max="85" step="1" value="45" data-sim-angle />
+                  <output data-sim-angle-out>45°</output>
+                </label>
+                <label>
+                  Gravity
+                  <select data-sim-gravity>
+                    <option value="earth" selected>Earth (9.81 m/s²)</option>
+                    <option value="moon">Moon (1.62 m/s²)</option>
+                    <option value="mars">Mars (3.72 m/s²)</option>
+                  </select>
+                </label>
+                <div class="sim-buttons">
+                  <button type="button" class="btn btn-primary" data-sim-launch>Launch</button>
+                  <button type="button" class="btn" data-sim-reset>Reset</button>
+                </div>
+                <div class="sim-readout">
+                  <div>Range: <strong data-sim-range>–</strong></div>
+                  <div>Max height: <strong data-sim-height>–</strong></div>
+                  <div>Flight time: <strong data-sim-time>–</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 style="margin-bottom:0.25rem;">Self-check quiz</h3>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz='[
+            {
+              "question": "At the peak of a projectile’s flight (no air resistance), what is true of its velocity?",
+              "choices": ["Velocity is zero", "Vertical velocity is zero; horizontal velocity is unchanged", "Horizontal velocity is zero; vertical velocity is unchanged", "Both components are at their maximum"],
+              "correctIndex": 1,
+              "explanation": "Vertical velocity passes through zero at the peak, while horizontal velocity never changes (no horizontal forces act)."
+            },
+            {
+              "question": "Ignoring air resistance, which launch angle gives the maximum range on level ground?",
+              "choices": ["30°", "45°", "60°", "75°"],
+              "correctIndex": 1,
+              "explanation": "45° maximizes range because it balances the horizontal and vertical velocity components: range ∝ sin(2θ), which peaks at θ = 45°."
+            },
+            {
+              "question": "If you double the launch velocity (same angle, same gravity), what happens to the range?",
+              "choices": ["It doubles", "It quadruples", "It stays the same", "It halves"],
+              "correctIndex": 1,
+              "explanation": "Range is proportional to v₀², so doubling velocity quadruples the range."
+            }
+          ]'></div>
+
+          <ul class="file-list">
+            <li><a href="files/unit3-worksheet.pdf"><span class="file-icon">📄</span> Unit 3 Practice Worksheet (PDF)</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- ============ UNIT 4 ============ -->
+      <details class="unit" id="unit-4" data-title="Unit 4 Energy Momentum" data-tags="kinetic energy potential energy momentum conservation collisions">
+        <summary>
+          Unit 4 — Energy &amp; Momentum
+          <span class="unit-meta">Week 6–7</span>
+        </summary>
+        <div class="unit-body">
+          <p>
+            [Replace with your unit overview: kinetic/potential energy,
+            conservation of energy, momentum, and collisions.]
+          </p>
+          <p class="placeholder-note">No slides uploaded yet for this unit — add a file to courses/course-1-physics/files/ and link it here.</p>
+        </div>
+      </details>
+
+      <p class="no-results" id="units-empty" style="display:none;">No units matched that filter.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Erandi Gunapala.</p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../../assets/js/nav.js"></script>
+<script src="../../assets/js/collapsible.js"></script>
+<script src="../../assets/js/search.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/projectile-sim.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Courses — Erandi Gunapala</title>
+<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-nav-id="courses">
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-title" href="../index.html">Erandi Gunapala</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <nav class="site-nav">
+      <a href="../index.html" data-nav-id="home">About</a>
+      <a href="index.html" data-nav-id="courses">Courses</a>
+      <a href="../search.html" data-nav-id="search">Search</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-hero">
+    <p class="eyebrow">All courses</p>
+    <h1>Courses</h1>
+    <p class="lede">Filter by title or topic. Each course page has its own unit navigation, quizzes, and downloads.</p>
+  </section>
+
+  <div class="filter-box" data-filter-target=".card" data-filter-empty="#courses-empty">
+    <input type="search" placeholder="Filter courses, e.g. &quot;physics&quot; or &quot;unit 2&quot;…" aria-label="Filter courses" />
+  </div>
+  <p class="filter-count" data-filter-count></p>
+
+  <div class="card-grid">
+    <a class="card" href="course-1-physics/index.html" data-title="Physics 1 PHYS-1410 PHYS-2110" data-tags="fall science physics mechanics kinematics projectile motion forces example">
+      <h3>Physics 1</h3>
+      <p>PHYS-1410 / PHYS-2110 — kinematics, forces, and projectile motion, with an interactive simulator.</p>
+      <div class="tag-row"><span class="tag">Fall</span><span class="tag">Interactive sim</span></div>
+    </a>
+    <a class="card" href="math-1150/index.html" data-title="College Algebra MATH-1150" data-tags="fall math college algebra">
+      <h3>College Algebra</h3>
+      <p>MATH-1150</p>
+      <div class="tag-row"><span class="tag">Fall</span></div>
+    </a>
+    <a class="card" href="trig-1210/index.html" data-title="Trigonometry MATH-1210" data-tags="fall math trigonometry">
+      <h3>Trigonometry</h3>
+      <p>MATH-1210</p>
+      <div class="tag-row"><span class="tag">Fall</span></div>
+    </a>
+    <a class="card" href="engr-1010/index.html" data-title="Intro to Engineering Design ENGR-1010" data-tags="fall engineering design">
+      <h3>Intro to Engineering Design</h3>
+      <p>ENGR-1010</p>
+      <div class="tag-row"><span class="tag">Fall</span></div>
+    </a>
+    <a class="card" href="course-5/index.html" data-title="Course 5" data-tags="course 5 todo">
+      <h3>Course 5</h3>
+      <p>[Replace with your course title and one-line description.]</p>
+      <div class="tag-row"><span class="tag">TODO</span></div>
+    </a>
+    <a class="card" href="course-6/index.html" data-title="Course 6" data-tags="course 6 todo">
+      <h3>Course 6</h3>
+      <p>[Replace with your course title and one-line description.]</p>
+      <div class="tag-row"><span class="tag">TODO</span></div>
+    </a>
+    <a class="card" href="course-7/index.html" data-title="Course 7" data-tags="course 7 todo">
+      <h3>Course 7</h3>
+      <p>[Replace with your course title and one-line description.]</p>
+      <div class="tag-row"><span class="tag">TODO</span></div>
+    </a>
+  </div>
+  <p class="no-results" id="courses-empty" style="display:none;">No courses matched that filter.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Erandi Gunapala.</p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/search.js"></script>
+</body>
+</html>

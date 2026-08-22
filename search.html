@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Search — Erandi Gunapala</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-nav-id="search">
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-title" href="index.html">Erandi Gunapala</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <nav class="site-nav">
+      <a href="index.html" data-nav-id="home">About</a>
+      <a href="courses/index.html" data-nav-id="courses">Courses</a>
+      <a href="search.html" data-nav-id="search">Search</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-hero search-hero">
+    <p class="eyebrow">Search everything</p>
+    <h1>Search across all courses</h1>
+    <p class="lede">Searches unit titles, quizzes, and files across every course. Run <code>scripts/build_search_index.py</code> after adding new content to keep this up to date.</p>
+  </section>
+
+  <div data-sitewide-search data-index-url="assets/data/search-index.json">
+    <input type="search" placeholder="Search units, quizzes, files…" aria-label="Search all materials" />
+    <p class="filter-count" data-result-count></p>
+    <ul class="result-list" data-results></ul>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Erandi Gunapala.</p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/search.js"></script>
+</body>
+</html>
