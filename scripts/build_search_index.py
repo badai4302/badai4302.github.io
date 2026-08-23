@@ -33,9 +33,9 @@ ROOT = Path(__file__).resolve().parent.parent
 COURSES_DIR = ROOT / "courses"
 OUTPUT = ROOT / "assets" / "data" / "search-index.json"
 
-UNIT_RE = re.compile(
-    r'<details\s+class="unit"\s+id="([^"]+)"\s+data-title="([^"]*)"[^>]*>', re.IGNORECASE
-)
+DETAILS_TAG_RE = re.compile(r"<details\b[^>]*class=\"unit\"[^>]*>", re.IGNORECASE)
+ID_ATTR_RE = re.compile(r'\bid="([^"]+)"')
+DATA_TITLE_ATTR_RE = re.compile(r'\bdata-title="([^"]*)"')
 TITLE_RE = re.compile(r"<title>([^<]*)</title>", re.IGNORECASE)
 QUIZ_RE = re.compile(r'<div\s+class="quiz"', re.IGNORECASE)
 FILELIST_RE = re.compile(
@@ -68,8 +68,14 @@ def build():
         rel_page = f"courses/{course_dir.name}/index.html"
         cname = course_name(html, course_dir.name)
 
-        for m in UNIT_RE.finditer(html):
-            unit_id, title = m.group(1), m.group(2) or unit_id
+        for m in DETAILS_TAG_RE.finditer(html):
+            tag = m.group(0)
+            id_match = ID_ATTR_RE.search(tag)
+            title_match = DATA_TITLE_ATTR_RE.search(tag)
+            if not id_match:
+                continue
+            unit_id = id_match.group(1)
+            title = (title_match.group(1) if title_match else "") or unit_id
             entries.append({
                 "title": title,
                 "course": cname,

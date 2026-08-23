@@ -244,7 +244,8 @@ img { max-width: 100%; }
 
 /* ---------- Office hours callout ---------- */
 
-.office-hours {
+.office-hours,
+.info-box {
   margin-top: 1.25rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
@@ -252,7 +253,8 @@ img { max-width: 100%; }
   max-width: 30rem;
 }
 
-.office-hours h3 {
+.office-hours h3,
+.info-box h3 {
   margin: 0;
   background: var(--color-primary-light);
   color: var(--color-primary-dark);
@@ -262,7 +264,8 @@ img { max-width: 100%; }
   padding: 0.55rem 1rem;
 }
 
-.office-hours dl {
+.office-hours dl,
+.info-box dl {
   margin: 0;
   padding: 0.85rem 1rem;
   display: grid;
@@ -272,14 +275,71 @@ img { max-width: 100%; }
   font-size: 0.9rem;
 }
 
-.office-hours dt {
+.office-hours dt,
+.info-box dt {
   color: var(--color-text-muted);
   font-weight: 600;
   white-space: nowrap;
 }
 
-.office-hours dd {
+.office-hours dd,
+.info-box dd {
   margin: 0;
+}
+
+/* Course info boxes sit side-by-side on wide screens instead of stacking. */
+.info-box-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 1.75rem;
+}
+
+.info-box-row .info-box {
+  margin-top: 0;
+  flex: 1 1 260px;
+  max-width: none;
+}
+
+.track-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 0.75rem 0;
+}
+
+.track-table th,
+.track-table td {
+  text-align: left;
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.track-table th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.topic-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.topic-list li {
+  margin-bottom: 0.3rem;
+}
+
+.topic-list .chapter-label {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+  display: block;
+  margin: 0.7rem 0 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /* ---------- Course page layout ---------- */

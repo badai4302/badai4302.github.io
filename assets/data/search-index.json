@@ -1,18 +1,21 @@
 [
   {
-    "title": "Unit 1 Kinematics",
-    "course": "Physics",
+    "title": "Unit 1 Introduction One-Dimensional Two-Dimensional Kinematics",
+    "course": "Physics I",
     "type": "unit",
     "url": "courses/course-1-physics/index.html#unit-1",
     "tags": [
       "unit",
       "1",
+      "introduction",
+      "one-dimensional",
+      "two-dimensional",
       "kinematics"
     ]
   },
   {
-    "title": "Unit 1 Kinematics \u2014 Self-check quiz",
-    "course": "Physics",
+    "title": "Unit 1 Introduction One-Dimensional Two-Dimensional Kinematics \u2014 Self-check quiz",
+    "course": "Physics I",
     "type": "quiz",
     "url": "courses/course-1-physics/index.html#unit-1",
     "tags": [
@@ -21,12 +24,15 @@
       "self-check",
       "unit",
       "1",
+      "introduction",
+      "one-dimensional",
+      "two-dimensional",
       "kinematics"
     ]
   },
   {
-    "title": "Unit 2 Forces Newtons Laws",
-    "course": "Physics",
+    "title": "Unit 2 Forces Newtons Laws Statics Torques Work Energy",
+    "course": "Physics I",
     "type": "unit",
     "url": "courses/course-1-physics/index.html#unit-2",
     "tags": [
@@ -34,73 +40,62 @@
       "2",
       "forces",
       "newtons",
-      "laws"
+      "laws",
+      "statics",
+      "torques",
+      "work",
+      "energy"
     ]
   },
   {
-    "title": "Unit 2 Forces Newtons Laws \u2014 Self-check quiz",
-    "course": "Physics",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-2",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "unit",
-      "2",
-      "forces",
-      "newtons",
-      "laws"
-    ]
-  },
-  {
-    "title": "Unit 3 Projectile Motion quiz simulator",
-    "course": "Physics",
+    "title": "Unit 3 Momentum Circular Rotational Motion",
+    "course": "Physics I",
     "type": "unit",
     "url": "courses/course-1-physics/index.html#unit-3",
     "tags": [
       "unit",
       "3",
-      "projectile",
-      "motion",
-      "quiz",
-      "simulator"
+      "momentum",
+      "circular",
+      "rotational",
+      "motion"
     ]
   },
   {
-    "title": "Unit 3 Projectile Motion quiz simulator \u2014 Self-check quiz",
-    "course": "Physics",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-3",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "unit",
-      "3",
-      "projectile",
-      "motion",
-      "quiz",
-      "simulator"
-    ]
-  },
-  {
-    "title": "Unit 4 Energy Momentum",
-    "course": "Physics",
+    "title": "Unit 4 Fluids Oscillations Hearing",
+    "course": "Physics I",
     "type": "unit",
     "url": "courses/course-1-physics/index.html#unit-4",
     "tags": [
       "unit",
       "4",
-      "energy",
-      "momentum"
+      "fluids",
+      "oscillations",
+      "hearing"
     ]
   },
   {
-    "title": "Unit 1 Slides (PDF)",
-    "course": "Physics",
+    "title": "Unit 1 Guided Lecture Notes (PDF)",
+    "course": "Physics I",
     "type": "file",
-    "url": "courses/course-1-physics/files/unit1-slides.pdf",
+    "url": "courses/course-1-physics/files/unit1-guided-notes.pdf",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "unit",
+      "1",
+      "guided",
+      "lecture",
+      "notes",
+      "(pdf)"
+    ]
+  },
+  {
+    "title": "Unit 1 Slides (PowerPoint, via OneDrive)",
+    "course": "Physics I",
+    "type": "file",
+    "url": "https://wnccnet-my.sharepoint.com/:p:/g/personal/gunapale_wncc_edu/IQD5ehXpgSguTKVPS8zFXNPQAf5d58prxBFeQOrxYsG6ffU?e=WiNMzF",
     "tags": [
       "download",
       "file",
@@ -108,38 +103,9 @@
       "unit",
       "1",
       "slides",
-      "(pdf)"
-    ]
-  },
-  {
-    "title": "Unit 2 Slides (PDF)",
-    "course": "Physics",
-    "type": "file",
-    "url": "courses/course-1-physics/files/unit2-slides.pdf",
-    "tags": [
-      "download",
-      "file",
-      "pdf",
-      "unit",
-      "2",
-      "slides",
-      "(pdf)"
-    ]
-  },
-  {
-    "title": "Unit 3 Practice Worksheet (PDF)",
-    "course": "Physics",
-    "type": "file",
-    "url": "courses/course-1-physics/files/unit3-worksheet.pdf",
-    "tags": [
-      "download",
-      "file",
-      "pdf",
-      "unit",
-      "3",
-      "practice",
-      "worksheet",
-      "(pdf)"
+      "(powerpoint,",
+      "via",
+      "onedrive)"
     ]
   },
   {
