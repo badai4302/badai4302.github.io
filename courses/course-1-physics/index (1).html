@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Physics I — Erandi Gunapala</title>
+<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body data-nav-id="courses">
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-title" href="../../index.html">Erandi Gunapala</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <nav class="site-nav">
+      <a href="../../index.html" data-nav-id="home">About</a>
+      <a href="../index.html" data-nav-id="courses">Courses</a>
+      <a href="../../search.html" data-nav-id="search">Search</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-hero">
+    <p class="eyebrow">Course · PHYS-1410 / PHYS-2110</p>
+    <h1>Physics I</h1>
+    <p class="lede">
+      A detailed study of one- and two-dimensional motion: kinematics,
+      Newton's Laws, energy, momentum, and rotational motion, with
+      oscillations, fluids, and thermal physics as time allows. Taught in
+      two tracks — <strong>PHYS-1410</strong> (Algebra &amp; Trigonometry)
+      and <strong>PHYS-2110</strong> (Calculus) — meeting together for
+      lecture and separately for recitation.
+    </p>
+  </section>
+
+  <div class="info-box-row">
+    <div class="info-box">
+      <h3>Meetings</h3>
+      <dl>
+        <dt>Lecture</dt>
+        <dd>MWF 11:00 – 11:50 AM</dd>
+        <dt>Recitation (1410)</dt>
+        <dd>Tue 11:00 – 11:50 AM</dd>
+        <dt>Recitation (2110)</dt>
+        <dd>Thu 11:00 – 11:50 AM</dd>
+      </dl>
+    </div>
+    <div class="info-box">
+      <h3>Textbooks</h3>
+      <dl>
+        <dt>PHYS-1410</dt>
+        <dd><a href="https://openstax.org/books/college-physics-2e/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units" target="_blank" rel="noopener">OpenStax College Physics 2e</a> (free)</dd>
+        <dt>PHYS-2110</dt>
+        <dd><a href="https://openstax.org/books/university-physics-volume-1/pages/1-introduction" target="_blank" rel="noopener">OpenStax University Physics Vol. 1</a> (free)</dd>
+      </dl>
+    </div>
+    <div class="info-box">
+      <h3>Grading</h3>
+      <dl>
+        <dt>Unit exams</dt>
+        <dd>30%</dd>
+        <dt>Assignments &amp; quizzes</dt>
+        <dd>25%</dd>
+        <dt>Labs</dt>
+        <dd>25%</dd>
+        <dt>Comprehensive final</dt>
+        <dd>20%</dd>
+      </dl>
+    </div>
+    <div class="info-box">
+      <h3>No Classes</h3>
+      <dl>
+        <dt>Labor Day</dt>
+        <dd>September 7</dd>
+        <dt>Fall Break</dt>
+        <dd>October 12 – 13</dd>
+        <dt>Thanksgiving</dt>
+        <dd>November 25 – 27</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="course-layout">
+
+    <nav class="unit-nav" aria-label="Units in this course">
+      <h2>Units</h2>
+      <ol>
+        <li><a href="#unit-1">Unit 1 — Introduction &amp; Kinematics</a></li>
+        <li><a href="#unit-2">Unit 2 — Forces &amp; Newton's Laws</a></li>
+        <li><a href="#unit-3">Unit 3 — Momentum &amp; Rotational Motion</a></li>
+        <li><a href="#unit-4">Unit 4 — Fluids &amp; Oscillations</a></li>
+      </ol>
+    </nav>
+
+    <div>
+      <div class="filter-box" data-filter-target=".unit" data-filter-empty="#units-empty">
+        <input type="search" placeholder="Filter units, e.g. &quot;projectile&quot; or &quot;quiz&quot;…" aria-label="Filter units" />
+      </div>
+      <p class="filter-count" data-filter-count></p>
+
+      <div class="collapse-controls" data-collapse-controls=".unit">
+        <button type="button" class="btn" data-expand-all>Expand all</button>
+        <button type="button" class="btn" data-collapse-all>Collapse all</button>
+      </div>
+
+      <!-- ============ UNIT 1 ============ -->
+      <details open class="unit" id="unit-1" data-title="Unit 1 Introduction One-Dimensional Two-Dimensional Kinematics" data-tags="kinematics vectors scalars displacement velocity acceleration significant figures dimensional analysis projectile motion scientific method">
+        <summary>
+          Unit 1 — Introduction &amp; Kinematics
+          <span class="unit-meta">Weeks 1–4 · Exam: Week 4</span>
+        </summary>
+        <div class="unit-body">
+          <p>
+            Course introduction and the tools of kinematics — how we
+            describe motion in one and two dimensions, including
+            projectile motion.
+          </p>
+
+          <table class="track-table">
+            <thead>
+              <tr><th>Track</th><th>Reading</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PHYS-1410 (Trig)</td>
+                <td>Chapters 1–3, <a href="https://openstax.org/books/college-physics-2e/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units" target="_blank" rel="noopener">College Physics 2e</a></td>
+              </tr>
+              <tr>
+                <td>PHYS-2110 (Calc)</td>
+                <td>Chapters 1–4, <a href="https://openstax.org/books/university-physics-volume-1/pages/1-introduction" target="_blank" rel="noopener">University Physics Vol. 1</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="file-list">
+            <li><a href="files/unit1-guided-notes.pdf"><span class="file-icon">📄</span> Unit 1 Guided Lecture Notes (PDF)</a></li>
+            <li><a href="https://wnccnet-my.sharepoint.com/:p:/g/personal/gunapale_wncc_edu/IQD5ehXpgSguTKVPS8zFXNPQAf5d58prxBFeQOrxYsG6ffU?e=WiNMzF" target="_blank" rel="noopener"><span class="file-icon">📊</span> Unit 1 Slides (PowerPoint, via OneDrive)</a></li>
+          </ul>
+          <p class="placeholder-note">Guided notes follow the College Physics (trig-track) chapter numbering and are formatted as a fill-in-the-blank Cornell-notes packet for use during lecture.</p>
+
+          <h3 style="margin-bottom:0.25rem;">Introduction</h3>
+          <ul class="topic-list">
+            <li>Physics: An Introduction</li>
+            <li>Physical Quantities and Units</li>
+            <li>Accuracy, Precision, and Significant Figures</li>
+            <li>Approximation</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Introduction — Self-check quiz" data-quiz='[
+            {
+              "question": "Which of these is a base SI unit?",
+              "choices": ["Newton", "Joule", "Meter", "Watt"],
+              "correctIndex": 2,
+              "explanation": "The meter is one of the seven base SI units. Newtons, joules, and watts are all derived units, built from combinations of the base units."
+            },
+            {
+              "question": "A measurement of 12.340 g is recorded. How many significant figures does it have?",
+              "choices": ["3", "4", "5", "2"],
+              "correctIndex": 2,
+              "explanation": "All non-zero digits are significant, as are zeros between or after significant digits when a decimal point is present — so 1, 2, 3, 4, and the trailing 0 all count: 5 significant figures."
+            },
+            {
+              "question": "You weigh yourself three times and get 142.1, 142.3, and 142.0 lb — all close to each other, but your bathroom scale is actually miscalibrated and reads 3 lb heavy. This set of measurements is best described as:",
+              "choices": ["Accurate but not precise", "Precise but not accurate", "Both accurate and precise", "Neither accurate nor precise"],
+              "correctIndex": 1,
+              "explanation": "Precision is how close repeated measurements are to each other (these are tightly clustered). Accuracy is how close a measurement is to the true value — since the scale is miscalibrated, these readings are precise but not accurate."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">One-Dimensional Kinematics</h3>
+          <ul class="topic-list">
+            <li>Displacement</li>
+            <li>Vectors, Scalars, and Coordinate Systems</li>
+            <li>Time, Velocity, and Speed</li>
+            <li>Acceleration</li>
+            <li>Motion Equations for Constant Acceleration</li>
+            <li>Problem-Solving Basics</li>
+            <li>Falling Objects</li>
+          </ul>
+
+          <h4 style="margin-bottom:0.25rem;">Interactive simulator — Position, Velocity &amp; Acceleration</h4>
+          <div class="sim-wrap" data-motion1d-sim>
+            <div class="mode-toggle" role="tablist">
+              <button type="button" class="btn active" data-motion1d-mode="car">Car on a straight road</button>
+              <button type="button" class="btn" data-motion1d-mode="ball">Ball thrown up/down</button>
+            </div>
+            <div class="sim-layout">
+              <div class="sim-canvas-box">
+                <canvas data-motion1d-track></canvas>
+                <canvas data-motion1d-graph="position"></canvas>
+                <canvas data-motion1d-graph="velocity"></canvas>
+                <canvas data-motion1d-graph="acceleration"></canvas>
+              </div>
+              <div class="sim-controls">
+                <label>
+                  Initial velocity
+                  <input type="range" min="-20" max="20" step="1" value="10" data-motion1d-velocity />
+                  <output data-motion1d-velocity-out>10 m/s</output>
+                </label>
+                <label data-motion1d-control="acceleration-car">
+                  Acceleration
+                  <input type="range" min="-5" max="5" step="0.5" value="1" data-motion1d-accel />
+                  <output data-motion1d-accel-out>1.0 m/s²</output>
+                </label>
+                <label data-motion1d-control="gravity-ball" style="display:none;">
+                  Gravity
+                  <select data-motion1d-gravity>
+                    <option value="earth" selected>Earth (9.81 m/s²)</option>
+                    <option value="moon">Moon (1.62 m/s²)</option>
+                    <option value="mars">Mars (3.72 m/s²)</option>
+                  </select>
+                </label>
+                <label>
+                  Time (drag to scrub)
+                  <input type="range" min="0" max="10" step="0.05" value="0" data-motion1d-time />
+                  <output data-motion1d-time-out>0.00 s</output>
+                </label>
+                <div class="sim-buttons">
+                  <button type="button" class="btn btn-primary" data-motion1d-play>Play</button>
+                  <button type="button" class="btn" data-motion1d-reset>Reset</button>
+                </div>
+                <div class="sim-readout">
+                  <div>Position: <strong data-motion1d-x>–</strong></div>
+                  <div>Velocity: <strong data-motion1d-v>–</strong></div>
+                  <div>Acceleration: <strong data-motion1d-a>–</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="One-Dimensional Kinematics — Self-check quiz" data-quiz='[
+            {
+              "question": "A runner completes one full lap of a 400 m track, ending back at the starting line. What is the runner’s displacement?",
+              "choices": ["400 m", "200 m", "0 m", "Cannot be determined"],
+              "correctIndex": 2,
+              "explanation": "Displacement is the straight-line distance and direction between start and end points. Since the runner ends where they started, the displacement is 0 m — even though the distance traveled was 400 m."
+            },
+            {
+              "question": "Which of these is a vector quantity?",
+              "choices": ["Speed", "Distance", "Velocity", "Time"],
+              "correctIndex": 2,
+              "explanation": "Velocity has both magnitude and direction, making it a vector. Speed, distance, and time are all scalars — magnitude only."
+            },
+            {
+              "question": "Ignoring air resistance, what is the acceleration of an object in free fall near Earth’s surface?",
+              "choices": ["Increasing as it falls", "Decreasing as it falls", "Zero", "Constant, about 9.8 m/s² downward"],
+              "correctIndex": 3,
+              "explanation": "Near Earth’s surface, gravitational acceleration is essentially constant at about 9.8 m/s², directed downward, regardless of the object’s speed."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Two-Dimensional Kinematics</h3>
+          <ul class="topic-list">
+            <li>Kinematics in Two Dimensions: An Introduction</li>
+            <li>Vector Addition and Subtraction: Graphical Methods</li>
+            <li>Vector Addition and Subtraction: Analytical Methods</li>
+            <li>Projectile Motion</li>
+          </ul>
+          <p class="placeholder-note">PHYS-2110 (calc track) continues into Chapter 4 — add that topic list once you send me the corresponding notes.</p>
+
+          <h4 style="margin-bottom:0.25rem;">Interactive simulator — Projectile Motion</h4>
+          <div class="sim-wrap" data-projectile-sim>
+            <div class="sim-layout">
+              <div class="sim-canvas-box">
+                <canvas></canvas>
+              </div>
+              <div class="sim-controls">
+                <label>
+                  Launch velocity
+                  <input type="range" min="5" max="60" step="1" value="25" data-sim-velocity />
+                  <output data-sim-velocity-out>25 m/s</output>
+                </label>
+                <label>
+                  Launch angle
+                  <input type="range" min="5" max="85" step="1" value="45" data-sim-angle />
+                  <output data-sim-angle-out>45°</output>
+                </label>
+                <label>
+                  Gravity
+                  <select data-sim-gravity>
+                    <option value="earth" selected>Earth (9.81 m/s²)</option>
+                    <option value="moon">Moon (1.62 m/s²)</option>
+                    <option value="mars">Mars (3.72 m/s²)</option>
+                  </select>
+                </label>
+                <div class="sim-buttons">
+                  <button type="button" class="btn btn-primary" data-sim-launch>Launch</button>
+                  <button type="button" class="btn" data-sim-reset>Reset</button>
+                </div>
+                <div class="sim-readout">
+                  <div>Range: <strong data-sim-range>–</strong></div>
+                  <div>Max height: <strong data-sim-height>–</strong></div>
+                  <div>Flight time: <strong data-sim-time>–</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Two-Dimensional Kinematics — Self-check quiz" data-quiz='[
+            {
+              "question": "Two perpendicular vectors are added: one 3 units east, one 4 units north. What is the magnitude of the resultant vector?",
+              "choices": ["7 units", "5 units", "1 unit", "12 units"],
+              "correctIndex": 1,
+              "explanation": "Perpendicular vectors add via the Pythagorean theorem: √(3² + 4²) = √25 = 5 units."
+            },
+            {
+              "question": "At the peak of a projectile’s flight (no air resistance), what is true of its velocity?",
+              "choices": ["Velocity is zero", "Vertical velocity is zero; horizontal velocity is unchanged", "Horizontal velocity is zero; vertical velocity is unchanged", "Both components are at their maximum"],
+              "correctIndex": 1,
+              "explanation": "Vertical velocity passes through zero at the peak, while horizontal velocity never changes (no horizontal forces act)."
+            },
+            {
+              "question": "Ignoring air resistance, which launch angle gives the maximum range on level ground?",
+              "choices": ["30°", "45°", "60°", "75°"],
+              "correctIndex": 1,
+              "explanation": "45° maximizes range because it balances the horizontal and vertical velocity components: range ∝ sin(2θ), which peaks at θ = 45°."
+            },
+            {
+              "question": "If you double the launch velocity (same angle, same gravity), what happens to the range?",
+              "choices": ["It doubles", "It quadruples", "It stays the same", "It halves"],
+              "correctIndex": 1,
+              "explanation": "Range is proportional to v₀², so doubling velocity quadruples the range."
+            }
+          ]'></div>
+        </div>
+      </details>
+
+      <!-- ============ UNIT 2 ============ -->
+      <details class="unit" id="unit-2" data-title="Unit 2 Forces Newtons Laws Statics Torques Work Energy" data-tags="forces newton's laws statics torques work energy applications friction drag elasticity equilibrium kinetic potential power">
+        <summary>
+          Unit 2 — Forces &amp; Newton's Laws
+          <span class="unit-meta">Weeks 5–8 · Exam: Week 8</span>
+        </summary>
+        <div class="unit-body">
+          <ul class="topic-list">
+            <span class="chapter-label">Week 5 — Forces and Newton's Laws</span>
+            <li>Force and Mass</li>
+            <li>Newton's Laws of Motion</li>
+            <li>Free-Body Diagrams</li>
+            <li>Weight and Normal Forces</li>
+
+            <span class="chapter-label">Week 6 — Applications of Newton's Laws</span>
+            <li>Friction</li>
+            <li>Drag</li>
+            <li>Elasticity</li>
+
+            <span class="chapter-label">Week 7 — Statics and Torques</span>
+            <li>Equilibrium</li>
+            <li>Statics and Torque</li>
+
+            <span class="chapter-label">Week 8 — Work and Energy (Unit 2 Exam)</span>
+            <li>Kinetic and Potential Energy</li>
+            <li>Conservative and Non-Conservative Forces</li>
+            <li>Power</li>
+          </ul>
+          <p class="placeholder-note">Guided notes, slides, and a practice quiz for this unit haven't been added yet — send them and I'll build it out the same way as Unit 1.</p>
+        </div>
+      </details>
+
+      <!-- ============ UNIT 3 ============ -->
+      <details class="unit" id="unit-3" data-title="Unit 3 Momentum Circular Rotational Motion" data-tags="momentum collisions circular motion rotational motion angular momentum impulse centripetal gravitation angular velocity gyroscope">
+        <summary>
+          Unit 3 — Momentum &amp; Rotational Motion
+          <span class="unit-meta">Weeks 9–12 · Exam: Week 12</span>
+        </summary>
+        <div class="unit-body">
+          <ul class="topic-list">
+            <span class="chapter-label">Week 9 — Linear Momentum &amp; Collisions</span>
+            <li>Linear Momentum and Force</li>
+            <li>Impulse</li>
+            <li>Conservation of Momentum</li>
+            <li>Elastic and Inelastic Collisions in One and Two Dimensions</li>
+
+            <span class="chapter-label">Week 10 — Uniform Circular Motion</span>
+            <li>Angular Velocity</li>
+            <li>Centripetal Acceleration and Centripetal Force</li>
+            <li>Newton's Universal Law of Gravitation</li>
+
+            <span class="chapter-label">Week 11 — Rotational Motion and Angular Momentum</span>
+            <li>Angular Acceleration</li>
+            <li>Kinematics and Dynamics of Rotational Motion</li>
+            <li>Rotational Kinetic Energy</li>
+            <li>Angular Momentum and Its Conservation</li>
+            <li>Collisions of Extended Bodies in Two Dimensions</li>
+            <li>Gyroscopic Effects</li>
+
+            <span class="chapter-label">Week 12 — Unit 3 Review and Exam</span>
+          </ul>
+          <p class="placeholder-note">Guided notes, slides, and a practice quiz for this unit haven't been added yet — send them and I'll build it out the same way as Unit 1.</p>
+        </div>
+      </details>
+
+      <!-- ============ UNIT 4 ============ -->
+      <details class="unit" id="unit-4" data-title="Unit 4 Fluids Oscillations Hearing" data-tags="fluid statics fluid dynamics oscillatory motion physics of hearing final exam density pressure archimedes bernoulli viscosity hooke's law simple harmonic sound doppler resonance">
+        <summary>
+          Unit 4 — Fluids &amp; Oscillations
+          <span class="unit-meta">Weeks 13–17 · Exam: Week 16</span>
+        </summary>
+        <div class="unit-body">
+          <ul class="topic-list">
+            <span class="chapter-label">Week 13 — Fluid Statics</span>
+            <li>Density and Pressure</li>
+            <li>Variation of Pressure with Depth in a Fluid</li>
+            <li>Pascal's Principle</li>
+            <li>Gauge Pressure, Absolute Pressure, and Pressure Measurement</li>
+            <li>Archimedes' Principle</li>
+
+            <span class="chapter-label">Week 14 — Fluid Dynamics and Oscillatory Motion</span>
+            <li>Flow Rate and Its Relation to Velocity</li>
+            <li>Bernoulli's Equation</li>
+            <li>Viscosity and Laminar Flow</li>
+
+            <span class="chapter-label">Week 15 — Oscillatory Motion</span>
+            <li>Hooke's Law</li>
+            <li>Simple Harmonic Motion</li>
+
+            <span class="chapter-label">Week 16 — Physics of Hearing (Unit 4 Exam)</span>
+            <li>Sound</li>
+            <li>Doppler Effect</li>
+            <li>Interference and Resonance</li>
+
+            <span class="chapter-label">Week 17 — Final Exam</span>
+            <li>Comprehensive final — date to be confirmed</li>
+          </ul>
+          <p class="placeholder-note">Guided notes, slides, and a practice quiz for this unit haven't been added yet — send them and I'll build it out the same way as Unit 1.</p>
+        </div>
+      </details>
+
+      <p class="no-results" id="units-empty" style="display:none;">No units matched that filter.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Erandi Gunapala.</p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../../assets/js/nav.js"></script>
+<script src="../../assets/js/collapsible.js"></script>
+<script src="../../assets/js/search.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/projectile-sim.js"></script>
+<script src="../../assets/js/motion-1d-sim.js"></script>
+</body>
+</html>
